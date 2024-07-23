@@ -15,7 +15,7 @@ jobs:
           uses: actions/checkout@master
 
         - name: Test Open Source Dependencies with Snyk
-          uses: snyk/actions/golang@master
+          uses: snyk/actions/php@master
           env:
             SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
           with:
